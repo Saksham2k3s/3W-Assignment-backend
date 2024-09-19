@@ -10,7 +10,7 @@ const cors = require('cors')
 
 //Configur CORS
 app.use(cors({
-    origin: "https://3-w-assignment-frontend.vercel.app",
+    origin: "*",
     methods: 'GET,POST,PUT,DELETE', 
     credentials: true, 
   }));
