@@ -157,6 +157,7 @@ exports.getUserProfile = catchAsyncError(async (req, res) => {
 // Get All Users
 exports.getAllUsers = catchAsyncError(async (req, res) => {
   console.log("Hiiii");
+  console.log("Taking data from localhost");
   try {
     // Fetch all users from the database
     const users = await UserModel.find().sort({ points: -1 });
