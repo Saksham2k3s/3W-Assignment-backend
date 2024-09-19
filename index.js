@@ -10,7 +10,7 @@ const cors = require('cors')
 
 //Configur CORS
 app.use(cors({
-    origin: "*",
+    origin: "https://guileless-khapse-841871.netlify.app",
     methods: 'GET,POST,PUT,DELETE', 
     credentials: true, 
   }));
