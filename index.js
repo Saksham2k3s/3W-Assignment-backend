@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-dotenv.config(); // Load environment variables as early as possible
+dotenv.config();
 const databaseConnection = require('./config/dbConfig');
 const express = require('express');
 const userRouter = require('./routes/userRoute');
@@ -10,7 +10,7 @@ const cors = require('cors')
 
 //Configur CORS
 app.use(cors({
-    origin: "https://guileless-khapse-841871.netlify.app",
+    origin: "https://3-w-assignment-frontend.vercel.app",
     methods: 'GET,POST,PUT,DELETE', 
     credentials: true, 
   }));
